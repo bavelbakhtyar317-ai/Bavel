@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PixelVault | Game Store</title>
+  <meta name="description" content="PixelVault - discover and buy your next favorite game.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#" class="logo">Pixel<span>Vault</span></a>
+    <input id="search" type="search" placeholder="Search games..." aria-label="Search games">
+    <button id="cartBtn" class="cart-btn" aria-label="Open cart">Cart <span id="cartCount">0</span></button>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Winter Sale</p>
+      <h1>Your next adventure starts here</h1>
+      <p>Save up to 50% on top picks across every genre.</p>
+      <a class="btn" href="#store">Browse games</a>
+    </div>
+  </section>
+
+  <main id="store" class="container">
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="grid"></div>
+    <p id="empty" class="empty" hidden>No games found.</p>
+  </main>
+
+  <aside id="drawer" class="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Your Cart</h2>
+      <button id="closeCart" aria-label="Close cart">&times;</button>
+    </div>
+    <div id="cartItems"></div>
+    <div class="drawer-foot">
+      <div class="total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+      <button class="btn full" id="checkout">Checkout</button>
+    </div>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <footer class="footer">
+    <p>&copy; 2026 PixelVault. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
